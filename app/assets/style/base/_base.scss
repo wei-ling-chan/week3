@@ -1,0 +1,85 @@
+//全域
+*, *::before, *::after{box-sizing:border-box;}
+
+body{
+  font-family: $font-family-base;
+  font-size: $fz-6;
+  line-height: 1.5;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto; 
+  padding-left: 12px;
+  padding-right: 12px;
+  @include pad{
+    // max-width: 720px;   
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @include mobile{
+    // max-width: 767px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @include phone{
+    // max-width:390px;
+    padding: 0 12px;   
+  }
+}
+.mb-14{
+  margin-bottom: 14px;
+}
+.mr-12{
+  margin-right: 12px;
+}
+.ml-12{
+  margin-left: 12px;
+}
+.mr-16{
+  margin-right: 16px;
+}
+.ml-16{
+  margin-left: 16px;
+}
+.mr-24{
+  margin-right: 24px;
+}
+.mb-4{
+  margin-bottom: 4px;
+}
+.mb-8{
+  margin-bottom: 8px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mb-32{
+  margin-bottom: 32px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+.pb-80{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.pb-16{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.flex{
+  display: flex;
+  flex-wrap:wrap;
+  // justify-content: center; 
+}

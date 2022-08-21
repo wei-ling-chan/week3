@@ -1,0 +1,257 @@
+.blog-header{
+  background-color: $secondary-color;
+  margin-bottom: 96px;
+  .container{
+    justify-content: space-between;
+   
+    align-items: center;
+  }
+  ul{
+    a{
+      color: white;
+      font-size: $fz-5;
+      line-height: 56px;
+      margin-right: 48px;
+    }
+  } 
+  .serch{
+    color: white;
+    width: 29.15px;
+    width: 29.15px;
+    line-height: 29.15px;
+  }
+}
+.blog{
+  h1{   
+    border-left: 8px solid #9F1213;
+    margin-bottom: 33px; 
+    padding-left: 16px;
+    font-size: $fz-12;   
+  }
+  h2{
+    font-size: $fz-8;
+    text-align: left;
+  }
+  li{
+    margin-bottom: 60px;
+  }
+  img{
+    // max-width: 636px;
+    width: 49%;
+    margin-right: 24px;
+    object-fit: cover;        
+  }
+  p{
+    font-size: $fz-5;
+    line-height: 30px;
+  }
+  .blog-item{
+    flex-wrap: nowrap;
+  }
+  .blog-info{
+    max-width: 636px;        
+  }
+  .subtitle{
+    max-width: 636px;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+ .date{
+    font-size:$fz-4 ;
+  }
+  .blog-contact{    
+    margin-bottom: 102px;
+  }
+  .more{
+    max-width: 636px;
+    justify-content: end;
+  }
+  a{
+    display:inline-block;
+    width: 101px;
+    color: $secondary-color;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+}
+.blog-2{
+  .blog-header{
+    margin-bottom: 24px;
+  }
+  .breadcrumb {     
+    a{
+      color:#000000;
+      font-size: 16px;
+    }
+  }
+  .contain{
+    flex-wrap: nowrap;
+  }
+  .tag,.tags{      
+    font-size: $fz-6;
+    a{
+      color: $primary-color;
+    }
+  }
+  .planning{
+    max-width:856px;   
+    
+    h1{
+      font-size: $fz-12;
+    }
+    .planning-item{
+      p{
+        font-size: $fz-4;
+      }
+    }
+  }
+  .tags{    
+    max-width:405px;
+    font-size: $fz-8;
+    color: $primary-color;      
+  }
+  .material-symbols-outlined{
+    font-size: 48px;
+    vertical-align: bottom;   
+    color: $primary-color;
+  }
+  .social-media{
+    padding-bottom: 24px;
+    border-bottom: 1px solid $text-secondary;
+    a,p{
+      display: inline-block;
+    }
+    a{
+      vertical-align: middle;
+    }
+  }
+  .page{
+    font-size: $fz-4;     
+    justify-content: space-between;
+    a{
+      display: inline-block;
+      color: $text-dark;
+    }
+    p{
+      display: inline-block;
+    }
+    .material-symbols-outlined{      
+      font-size: $fz-6;     
+    }    
+  }  
+}
+
+/*blog RWD*/
+@include pad{
+  .blog{
+    h2{
+      font-size: 24px;
+      margin: 0;
+    }
+    p,a{
+      font-size: 16px;
+    }
+    .subtitle,.blog-contact{
+      margin: 0;
+    }
+    .blog-item{
+      flex-wrap: nowrap;
+      margin-bottom: 24px;
+      img{
+        width: 46%;
+      }
+      .more{
+        justify-content: start;
+        a{
+          text-align:start;
+          font-weight: bold;
+        }
+      }          
+    }
+  }
+}
+
+@include mobile{
+  h1{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .blog-header{
+    display: none;
+  }
+  .blog{
+    .blog-item{
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+      .blog-contact,.more{
+        display: none;
+      }
+    }
+  }
+}
+
+@include phone{
+  h1{
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+
+  .blog-header{
+    display: none;
+  }
+  .blog{
+    .blog-item{
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+      .blog-contact,.more{
+        display: none;
+      }
+    }
+  }
+}
+
+/*blog-2 RWD*/
+@include pad{
+  .blog-2{    
+    .tags{
+      .tag-item{
+        max-height: 24px;
+      }
+      a{
+        font-size: 16px;
+        line-height: 24px;        
+        margin-right: 16px;
+      }
+    }  
+  }
+}
+
+@include phone{ 
+  .blog-2{
+    .planning h1{     
+      font-size: 24px;
+      margin: 0;
+    }
+    .subtitle{
+      font-size: 16px;
+    }
+    .tags{
+      display: none;
+    }
+  }
+}
+
+@include mobile{
+  .blog-2{
+    .social-media,.page,.tags{
+      display: none;
+    }
+  }
+}

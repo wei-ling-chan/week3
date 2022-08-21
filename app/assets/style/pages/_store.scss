@@ -1,0 +1,119 @@
+.store{
+  padding-top:96px;
+  padding-bottom:32px;
+  select{
+    width:23%;
+    height: 38px;    
+    font-size:$fz-4;
+  }
+  .store-area{
+    margin-bottom: 40px;
+    align-items: center;
+  }
+ .store-card-item{
+    width:33.333%;
+    padding-right: 12px;
+    padding-left: 12px;
+ }
+  li{
+    
+    font-size:$fz-5;
+    line-height: 30px;
+    
+    &:nth-child(3n){
+     margin-right: 0;;
+    }
+  }  
+  h1{
+    padding-left: 16px;
+    font-size: $fz-12;
+    border-left: 8px solid #9F1213;
+    margin-bottom: 33px;    
+  }
+ 
+  h2{
+    font-size:$fz-6 ;
+    text-align: left;
+    color:$text-secondary;
+    margin-bottom:0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left: 1px solid $border-secondary-color;
+    border-right: 1px solid $border-secondary-color ;
+  }
+  
+  .button{
+    background-color: $text-secondary;
+    
+    text-align: center;
+    font-size: $fz-m;  
+    margin-bottom: 48px;
+    a{
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      width: 65%;
+      height: 59px;
+      font-size: $fz-m;
+      line-height: 59px;
+    }
+  }
+  .store-card-body{
+    border:1px solid $border-secondary-color;
+    padding: 16px 24px;   
+  }
+  .store-card{
+   width: 41%;   
+   h2{
+    padding-left: 24px;
+   }
+   ul{
+    padding-left: 24px;
+    border: 1px solid $border-secondary-color;    
+   }   
+  }
+ 
+  .phone,.time{
+    margin-bottom: 7px;
+  } 
+}
+
+@include pad{
+  .store{
+    .store-card-item{
+      width: 48%;     
+     }
+     .store-card-list{
+      justify-content: space-between;
+     }
+  }
+
+}
+
+@include phone{  
+  .store-area{  
+    font-size: 16px; 
+    
+    padding-left: 13px;
+    padding-right: 13px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    select{
+      width: 100%;
+    }
+    .store-area-lable{
+      width: 30%;
+    }
+  }
+  
+  .store{
+    padding-top: 0;
+    .store-card-item{
+      width: 98%;     
+     }
+     .store-card-list{
+      justify-content:center;
+      }
+  }
+}
+
